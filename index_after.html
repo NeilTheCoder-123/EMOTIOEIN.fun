@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emotioein</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:900'>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+    
+        <link rel="stylesheet" type="text/css" href="style_after.css">
+    </head>
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: url("https://www.utoronto.ca/sites/default/files/GettyImages-884378360.jpg");
+        
+          /* Set a specific height */
+          min-height: 500px; 
+        
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+    <body>
+        
+            
+            
+            <div class="parallax" id="div"><div class="title" data-splitting="lines" style="color: white;">
+                EMOTIOEIN
+              </div></div>
+            
+            <div style="height:1000px;background-color:#efae0d;font-size:36px;margin-top:5vmax;">
+                <div class="emoji" style="font-size: 48px;text-align: center;">(❁´◡`❁)😀😊😥😌😡🙃😐(¬_¬)</div>
+                <h1 style="font-family: 'Black Ops One', cursive; text-align: center;">Prediction - </h1>
+                <div style="display:flex;">
+                <span style="margin-left: 15vmax;">
+                    <h1 style="text-align: center; font-family: 'Black Ops One', cursive;">Webcam View - </h1>
+                    <div style="border-style: dashed; height: 300px; width: 400px; " id="camera"></div>
+                    <a class="btn" style="margin-left: 150px;" onclick="capture();">CAPTURE</a>
+                </span>
+                
+                <span style="margin-left: 15vmax;">
+                    <h1 style="text-align: center; font-family: 'Black Ops One', cursive;">Selfie - </h1>
+                    <div style="border-style: dashed; height: 300px; width: 400px;" id="result"></div>
+                    <a class="btn cta" style="margin-left: 150px;">PREDICT</a>
+                </span>
+                </div>
+            </div>
+    <script src="main.js"></script>        
+    </body>
+</html>
